@@ -9,4 +9,4 @@ Dependencies:
     * Node, obviously.
     * Connect
     * Socket.IO
-
+the easiest way to install those it to use the package manager npm.
