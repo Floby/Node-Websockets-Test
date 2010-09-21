@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My WebSockets test</title>
+    <style>
+	table {
+	    width: 100%;
+	}
+	table * {
+	    margin; 0;
+	    padding: 0;
+	}
+	table tr th {
+	    border-bottom: 1px solid black;
+	}
+	table tr td {
+	    overflow: auto;
+	    vertical-align: top;
+	}
+	table tr td + td {
+	    border-left: 1px solid #aaa;
+	    width: 20%;
+	}
+	body table tr td div {
+	    font-family: "Courrier New", Courrier, monospace, sans-serif;
+	    font-size: 80%;
+	    white-space	: nowrap;
+	    padding: 0em 1em;
+	    border-bottom: 1px solid #aaa
+	}
+
+	body form input#message {
+	    width: 100%;
+	}
+	body form input[type="submit"] {
+	    display:none;
+	}
+    </style>
+</head>
+<body>
+    <h1>WebSockets tests</h1>
+    <p>Write the number of your contact followed by the message you want to send. <br />
+    If no number is specified, then the message will be broadcasted</p>
+    <form action="#" method="POST">
+	<input type="text" name="message" id="message" />
+	<input type="submit" />
+    </form>
+    <table>
+	<tr class="title">
+	    <th>received</th>
+	    <th>connected</th>
+	</tr>
+	<tr>
+	    <td id="received"></td>
+	    <td id="connected"></td>
+	</tr>
+    </table>
+    <script type="application/javascript" src="soquette.io.js"></script>
+    <script type="application/javascript" src="client.js"></script>
+</body>
+</html>
