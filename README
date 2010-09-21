@@ -5,3 +5,8 @@ To get it running:
     * open your browser to http://localhost:8000
     * have fun
 
+Dependencies:
+    * Node, obviously.
+    * Connect
+    * Socket.IO
+
